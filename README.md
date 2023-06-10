@@ -6,6 +6,7 @@
 - Make sure you have `docker` and `docker-compose` installed and that the Docker daemon is running
 - Build and run the container: `docker-compose up`
 - Start making some requests: `curl http://localhost:8000/articles/`
+- Test the app with `python manage.py test techtest.regions techtest.articles techtest.author`
 
 ## Running with a virtual environment
 
@@ -22,20 +23,6 @@
 
 ## Project Structure Notes
 
-- There are two django apps installed `articles` and `regions`
+- There are three django apps installed `articles`, `regions` and `author` 
 - Django is used as a RESTful API, no html rendering is required
 - Marshmallow is used to serialize and deserialize django object instances
-
-## Tasks
-
-- Add an new entity called `Author` with a `first_name` and a `last_name`. An API user should be able to create a new `Author`, edit an existing one and list all existing ones.
-- Update the `Article` entity so that it relates to an `Author`. An API user should be able to select an `Author` and/or `Region` when creating or editing an `Article`.
-- A user should be allowed to enter an `Article` with no `Author`, or remove the `Author` from an existing `Article`.
-- An API user should be able to perform the following actions for each `Article`, `Author` and `Region` entity:
-    - Get all entities
-    - Create a single entity
-    - Get a single entity
-    - Update a single entity
-    - Delete a single entity
-- The app should be robust and you should make sure that everything works as specified.
-- Add unit tests for any code written to implement the tasks using a testing framework of your choice.
