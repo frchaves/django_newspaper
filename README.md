@@ -1,4 +1,4 @@
-# Django Backend - Books test
+# Django Backend - Newspaper project
 
 ## Running with Docker
 
