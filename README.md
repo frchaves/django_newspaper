@@ -1,4 +1,4 @@
-# Overloop Django Tech Test Backend
+# Django Backend - Books test
 
 ## Running with Docker
 
